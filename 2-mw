@@ -1,0 +1,38 @@
+var name = prompt ("Hi!, I'm Tony, please tell me your name."); //CHANGED
+
+//var response1 = prompt (`Hello, ${name}. Please hit enter again.`);//CHANGED
+
+var response2 = prompt ( "Please explain how you are feeling today.");//CHANGED
+
+
+ var depression = ["reckless behavior", "sucidal tendency", "low self-esteem",
+ "self-hate", "no ambition", "irritable", "isolated", "anxiety", "can't sleep",
+ "no energy", "no appetite", "losing weight"]; 
+
+//----MAKING CHANGES TO THE CODE AND IT IS NOT TAKING-----
+
+
+
+ function isInList(userInput, depression) {
+     
+     //comparing userInput and depression arrays;looking for a match
+        for (var i = 0; i < depression.length; i++) {
+        userInput++;//CHANGED
+        
+      //fix this up
+            if (userInput.includes(depression[i])) {
+                     
+  // true; found match so print
+  document.write(`Thank you ${name}. You are suffering from depression. Please call 555-555-5555 for help. You are going to be fine.`);
+    
+           } else  {  
+   
+ //false; no match
+ document.write ( `OK, ${name}, please select from one of the topics that closest relates to how you are feeling.`);
+ 
+        
+            }
+        }
+ }
+ isInList(response2, depression);
+        
