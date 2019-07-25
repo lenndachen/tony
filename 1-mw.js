@@ -6,7 +6,7 @@ var topic = prompt(`Hello! ${name}, please explain how you are feeling today.`);
  var response = [];
  
 function userInput() {
-  for(i = 0; i < response.length; I++) {
+  for(i = 0; i < response.length; i++) {
 
  response.pushtopic[i];
  
@@ -16,12 +16,5 @@ function userInput() {
  "no energy", "no appetite", "losing weight"); 
      
      document.write(`Based on your input, ${name}, I believe you feel depressed. Is this true?`);
+  }
 }
-
-//function userInput1() {
-
-
-// 12 and under 
-//if (age <= 12) {
-//document.write("Awesome! You are, " + age + " , years old.");
-//}
